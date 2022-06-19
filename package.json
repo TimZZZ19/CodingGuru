@@ -1,0 +1,23 @@
+{
+  "name": "codingguru",
+  "version": "1.0.0",
+  "description": "This is a landing page for a fictional coding boot camp.",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build -i src/styles.css -o public/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TimZZZ19/CodingGuru.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TimZZZ19/CodingGuru/issues"
+  },
+  "homepage": "https://github.com/TimZZZ19/CodingGuru#readme",
+  "dependencies": {
+    "tailwindcss": "^3.1.3"
+  }
+}
