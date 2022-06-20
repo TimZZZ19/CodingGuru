@@ -11,6 +11,13 @@ module.exports = {
         '1/4': '-25%',
         '1/2': '-50%',
       },
+      transitionProperty: {
+        ml: 'margin-left',
+      },
+      transitionDuration: {
+        '1000': '1000ms',
+        '2000': '2000ms',
+      },
     },
     fontSize: {
       xs: '.75rem',

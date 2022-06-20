@@ -63,11 +63,18 @@
             </p>
           </form>
         </div>
+
+        <!-- slides-window -->
         <div
           class="slides-window overflow-hidden tablet:w-96 mobile-L:w-80 mobile-S:w-56"
         >
+          <!-- slides band -->
           <div class="slides-band flex w-4/1">
-            <div class="slide w-1/4 ml-1/4">
+            <!-- all the slides-start -->
+            <div
+              id="first-slide"
+              class="slide w-1/4 transition-ml duration-1000"
+            >
               <img
                 src="./images/hero/high-paying-jobs.jpg"
                 alt="high-paying-jobs"
@@ -82,12 +89,38 @@
                 alt="cut-to-the-chase"
               />
             </div>
+            <!-- all the slides-end -->
           </div>
+
+          <!-- slides control start -->
+          <div class="slides-control flex justify-center gap-5 mt-2">
+            <input
+              type="radio"
+              class="hover:cursor-pointer"
+              id="radio-btn-1"
+              name="slides-control"
+            />
+            <input
+              type="radio"
+              class="hover:cursor-pointer"
+              id="radio-btn-2"
+              name="slides-control"
+            />
+            <input
+              type="radio"
+              class="hover:cursor-pointer"
+              id="radio-btn-3"
+              name="slides-control"
+            />
+          </div>
+          <!-- slides control end -->
         </div>
       </div>
     </section>
     <section class="figures"></section>
     <section class="testimonials"></section>
     <footer class="footer"></footer>
+
+    <script src="./index.js"></script>
   </body>
 </html>
