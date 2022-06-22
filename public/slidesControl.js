@@ -63,20 +63,20 @@ function switchHeadlineAndImage(currentCounter) {
   switch (currentCounter) {
     case 1:
       //switch the current headline
-      headline1.classList.add('text-gray-700')
       headline2.classList.remove('text-gray-700')
       headline3.classList.remove('text-gray-700')
+      headline1.classList.add('text-gray-700')
 
       // switch the current slide
-      firstSlide.classList.remove('m/-1/4')
+      firstSlide.classList.remove('ml-1/4')
       firstSlide.classList.remove('ml-1/2')
       firstSlide.classList.add('ml-0')
       break
     case 2:
       //switch the current headline
-      headline2.classList.add('text-gray-700')
       headline1.classList.remove('text-gray-700')
       headline3.classList.remove('text-gray-700')
+      headline2.classList.add('text-gray-700')
 
       // switch the current slide
       firstSlide.classList.remove('ml-0')
@@ -85,13 +85,13 @@ function switchHeadlineAndImage(currentCounter) {
       break
     case 3:
       //switch the current headline
-      headline3.classList.add('text-gray-700')
       headline1.classList.remove('text-gray-700')
       headline2.classList.remove('text-gray-700')
+      headline3.classList.add('text-gray-700')
 
       // switch the current slide
       firstSlide.classList.remove('ml-0')
-      firstSlide.classList.remove('m/-1/4')
+      firstSlide.classList.remove('ml-1/4')
       firstSlide.classList.add('ml-1/2')
   }
 }
