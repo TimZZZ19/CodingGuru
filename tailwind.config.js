@@ -4,15 +4,45 @@ module.exports = {
   theme: {
     extend: {
       width: {
-        '4/1': '400%',
+        '10': '40px',
+        '11': '44px',
+        '12': '48px',
+        '14': '56px',
+        '16': '64px',
+        '24': '96px',
+        '28': '112px',
+        '30': '120px',
+        '32': '128px',
+        '59': '235px',
+        '61': '244px',
+        '62': '248px',
+        '108': '432px',
+        '110': '440px',
+        '120': '480px',
+        '125': '500px',
+        '137': '520px',
         '256': '975px',
+
+        '4/1': '400%',
+      },
+      height: {
+        '40': '160px',
+        '100': '400px',
+
+        '4/1': '400%',
       },
       margin: {
         '1/4': '-25%',
         '1/2': '-50%',
+        '3/4': '-75%',
+
+        '400': '-400px',
+        '800': '-800px',
+        '1200': '-1200px',
       },
       transitionProperty: {
         ml: 'margin-left',
+        mt: 'margin-top',
       },
       transitionDuration: {
         '1000': '1000ms',
@@ -40,6 +70,9 @@ module.exports = {
       tablet: '640px',
       laptop: '1024px',
       desktop: '1280px',
+    },
+    boxShadow: {
+      'all-directions': '3px 3px 5px  , -3px -3px 5px  ',
     },
   },
   plugins: [],

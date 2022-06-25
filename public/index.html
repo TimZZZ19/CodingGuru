@@ -11,10 +11,8 @@
     <section
       class="hero bg-gradient-to-r from-cyan-500 to-blue-500 text-gray-100"
     >
-      <header
-        class="laptop:w-256 mx-auto pt-10 pb-5 laptop:pl-0 mobile-S:pl-3 font-bold text-2xl"
-      >
-        <h1 class="uppercase">coding guru</h1>
+      <header class="laptop:w-256 mx-auto pt-10 pb-5 laptop:pl-0 mobile-S:pl-3">
+        <h5 class="text-2xl font-bold uppercase">coding guru</h5>
       </header>
       <div
         class="flex justify-center py-10 laptop:flex-row laptop:items-start laptop:gap-2 mobile-S:flex-col-reverse mobile-S:items-center mobile-S:gap-10"
@@ -22,19 +20,23 @@
         <div
           class="introduction flex flex-col gap-5 tablet:w-96 mobile-S:w-56 tablet:text-base mobile-S:text-sm"
         >
-          <div class="hero-subtitles font-bold tablet:text-xl mobile-S:text-lg">
-            <h4 class="hero-subtitle-1 text-gray-700">
+          <div
+            class="hero-subtitles font-bold tablet:text-xl laptop:text-start mobile-S:text-lg mobile-S:text-center"
+          >
+            <p class="hero-subtitle-1 text-gray-700">
               High-paying Developer Jobs
-            </h4>
-            <h4 class="hero-subtitle-2">
+            </p>
+            <p class="hero-subtitle-2">
               Do Fun Stuff for a living
-            </h4>
-            <h4 class="hero-subtitle-3">
+            </p>
+            <p class="hero-subtitle-3">
               Become a Dev in 3+ Months
-            </h4>
+            </p>
           </div>
 
-          <form class="flex flex-col gap-3">
+          <form
+            class="flex flex-col gap-3 laptop:text-start mobile-S:text-center"
+          >
             <div class="call-to-action text-gray-700">
               <p>
                 Join One of the Best Coding Bootcamps in US
@@ -48,12 +50,15 @@
                 placeholder="Email Address"
               />
             </div>
-            <button
-              type="submit"
-              class="px-3 py-2 bg-gray-700 text-gray-100 hover:cursor-pointer w-3/4 font-bold"
-            >
-              Get Free Course Packet
-            </button>
+            <!-- had to wrap this div around the button, otherwise text-center won't work -->
+            <div class="btn-container">
+              <button
+                type="submit"
+                class="px-3 py-2 bg-gray-700 text-gray-100 hover:cursor-pointer w-3/4 font-bold"
+              >
+                Get Free Course Packet
+              </button>
+            </div>
             <p class="text-xs">
               By submitting this form, you agree to our
               <a href="#" class="underline underline-offset-1">
@@ -151,10 +156,172 @@
         </div>
       </div>
     </section>
-    <section class="figures"></section>
-    <section class="testimonials"></section>
+    <section class="testimonials-1 bg-gray-100">
+      <div
+        class="laptop:w-256 laptop:flex-row mobile-S:flex-col mobile-S:items-center mobile-S:gap-10 h-full p-10 mx-auto flex justify-between items-start"
+      >
+        <div class="flex gap-5 mobile-L:flex-row mobile-S:flex-col">
+          <div>
+            <h6 class="text-xl text-gray-500 font-bold text-center">$70,235</h6>
+            <p class="text-xs text-gray-400 w-59 text-center">
+              Salary information is based on survey results gathered from all
+              Coding Guru alumni in December 2021
+            </p>
+          </div>
+          <div>
+            <h6 class="text-xl text-gray-500 font-bold text-center">10000+</h6>
+            <p class="text-xs text-gray-400 text-center">
+              Graduates to Date
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col items-center gap-2">
+          <p
+            class="text-blue-600 mobile-L:text-base mobile-L:font-bold mobile-S:text-xs mobile-S:font-normal"
+          >
+            Check out our 800+ course reviews
+          </p>
+          <div class="flex gap-5 items-center">
+            <span class="mobile-L:w-20 mobile-S:w-16 hover:cursor-pointer">
+              <img
+                class="w-full"
+                src="./images/testimonials/career-karma.png"
+                alt=""
+              />
+            </span>
+            <span class="mobile-L:w-20 mobile-S:w-16 hover:cursor-pointer">
+              <img
+                class="w-full"
+                src="./images/testimonials/course-report.png"
+                alt=""
+              />
+            </span>
+            <span class="mobile-L:w-20 mobile-S:w-16 hover:cursor-pointer">
+              <img
+                class="w-full"
+                src="./images/testimonials/swtichup.svg"
+                alt=""
+              />
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="testimonials-2">
+      <div
+        class="flex gap-10 justify-between items-center py-10 mx-auto laptop:w-256 laptop:flex-row mobile-S:flex-col-reverse"
+      >
+        <div class="companies">
+          <div
+            class="company-icons grid mobile-L:grid-cols-3 mobile-S:grid-cols-2 mobile-S:gap-4"
+          >
+            <div class="w-28 place-self-center">
+              <img
+                class="w-full"
+                src="./images/companies/google.png"
+                alt="google"
+              />
+            </div>
+            <div class="w-28 place-self-center">
+              <img
+                class="w-full"
+                src="./images/companies/meta.png"
+                alt="meta"
+              />
+            </div>
+            <div class="w-24 place-self-center">
+              <img
+                class="w-full"
+                src="./images/companies/amazon.png"
+                alt="amazon"
+              />
+            </div>
+            <div class="w-14 place-self-center">
+              <img
+                class="w-full"
+                src="./images/companies/uber.png"
+                alt="uber"
+              />
+            </div>
+            <div class="w-28 place-self-center">
+              <img
+                class="w-full"
+                src="./images/companies/microsoft.png"
+                alt="microsoft"
+              />
+            </div>
+            <div class="w-24 place-self-center">
+              <img
+                class="w-full"
+                src="./images/companies/Linkedin-logo-png.png"
+                alt="linkedin"
+              />
+            </div>
+            <div class="w-14 place-self-center">
+              <img
+                class="w-full"
+                src="./images/companies/apple-logo.png"
+                alt="apple"
+              />
+            </div>
+
+            <div class="w-14 place-self-center">
+              <img
+                class="w-full"
+                src="./images/companies/ebay.png"
+                alt="ebay"
+              />
+            </div>
+            <div class="w-14 place-self-center">
+              <img
+                class="w-full"
+                src="./images/companies/ibm-logo-transparent.png"
+                alt="ibm"
+              />
+            </div>
+          </div>
+          <p
+            class="mt-5 text-gray-400 font-thin mobile-L:text-base mobile-S:text-xs"
+          >
+            A few places where our 10000+ alumni work
+          </p>
+        </div>
+        <div
+          class="testimonials-window tablet:w-137 mobile-L:w-108 mobile-S:w-full h-100 rounded shadow-all-directions shadow-gray-100 flex flex-col justify-center items-center p-10 gap-5"
+        >
+          <p class="mobile-L:text-xl text-gray-500 font-thin text-center">
+            Coding Guru helped me cut right to the chase. Within just two weeks
+            after graduating from Coding Guru, I got a job as a Full Stack
+            Developer.
+          </p>
+          <div class="flex items-center gap-10">
+            <div>
+              <img
+                class="w-full"
+                src="./images/testimonials/circle-headshot-girl.png"
+                alt="headshot"
+              />
+            </div>
+            <p
+              class="mobile-L:text-sm mobile-S:text-xs text-gray-500 font-thin"
+            >
+              Cammy Lin | Psychology Background Now at
+              <span class="w-16 inline-block mx-2">
+                <img
+                  class="w-full"
+                  src="./images/companies/microsoft.png"
+                  alt="microsoft"
+                />
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer class="footer"></footer>
 
-    <script src="./slidesControl.js"></script>
+    <script src="./scripts/imageSlides.js"></script>
   </body>
 </html>
+<!--   -->
