@@ -295,17 +295,17 @@
             Developer.
           </p>
           <div class="flex items-center gap-10">
-            <div>
+            <div class="mobile-L:w-61 mobile-S:w-32s rounded overflow-hidden">
               <img
                 class="w-full"
-                src="./images/testimonials/circle-headshot-girl.png"
+                src="./images/testimonials/Alex.jpg"
                 alt="headshot"
               />
             </div>
             <p
               class="mobile-L:text-sm mobile-S:text-xs text-gray-500 font-thin"
             >
-              Cammy Lin | Psychology Background Now at
+              Alex Hipp | Psychology Background Now at
               <span class="w-16 inline-block mx-2">
                 <img
                   class="w-full"
@@ -319,7 +319,41 @@
       </div>
     </section>
 
-    <footer class="footer"></footer>
+    <footer class="footer bg-gradient-to-r from-blue-500 to-cyan-500">
+      <div
+        class="laptop:w-256 mx-auto py-10 flex gap-5 laptop:flex-row mobile-S:flex-col justify-center items-center"
+      >
+        <div>
+          <p class="text-xl text-gray-100 font-bold text-center">
+            Class starts on July 19th in Chicago
+          </p>
+          <p class="text-gray-100 text-sm text-center">
+            Submit your email for a free copy of your course packet
+          </p>
+        </div>
+        <form class="tablet:flex mobile-S:block">
+          <div class="laptop:text-end mobile-S:text-center">
+            <input
+              id="packet-email"
+              type="email"
+              class="px-3 py-1 w-3/4"
+              placeholder="Email Address"
+            />
+          </div>
+          <!-- had to wrap this div around the button, otherwise text-center won't work -->
+          <div
+            class="btn-container tablet:ml-2 tablet:mt-0 tablet:text-start mobile-S:ml-0 mobile-S:mt-2 mobile-S:text-center"
+          >
+            <button
+              type="submit"
+              class="px-3 py-1 bg-gray-700 text-gray-100 hover:cursor-pointer"
+            >
+              Get Free Course Packet
+            </button>
+          </div>
+        </form>
+      </div>
+    </footer>
 
     <script src="./scripts/imageSlides.js"></script>
   </body>
